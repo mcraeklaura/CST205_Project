@@ -1,0 +1,27 @@
+Project Plan
+1. Open the music file and read it
+2. Determine at which points in the music will the object that is moving change to 
+3. Make the object (determine if it will be 2D or 3D)
+4. Make the movements of the object
+5. Connect the two so that the object moves with the different sounds and wavelengths of the music
+6. Make a viewing window where you can see the object moving with the music
+
+Project Information/Links:
+Convert music into WAV file.
+http://audio.online-convert.com/convert-to-wav
+
+GitHub project URL
+https://github.com/mcraeklaura/CST205_Project
+
+Blender Basics Introduction for Beginners
+http://cgcookie.com/blender/cgc-courses/blender-basics-introduction-for-beginners/
+	-Make sure that you can connect this with the Python code.
+
+~Library for reading the audio: Audioread.
+	-Information for this library
+	https://github.com/sampsyo/audioread
+~Other library we are using: PyOpenGL
+	-Information for this library
+	http://pyopengl.sourceforge.net/
+~For the 3D/2D aspect of the program, we are using the Blender application.
+
