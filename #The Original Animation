@@ -1,0 +1,47 @@
+#The Original Animation
+
+def draw_rect(x, y, width, height):
+    glBegin(GL_QUADS)                                  # start drawing a rectangle
+    glVertex2f(x, y)                                   # bottom left point
+    glVertex2f(x + width, y)                           # bottom right point
+    glVertex2f(x + width, y + height)                  # top right point
+    glVertex2f(x, y + height)                          # top left point
+    glEnd()
+
+
+
+def draw():
+    global recx
+    global recy
+    global velx
+    global vely                                         # ondraw is called all the time
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT) # clear the screen
+    glLoadIdentity()
+    refresh2d(width, height)                                  # reset position
+
+
+    glColor3f(0.0, 0.0, 1.0)
+
+    #while  xaxis < 200 and yaxis < 200:
+
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT) # clear the screen
+
+    draw_rect(recx, recy, right, left)
+    draw_rect(recx + 100, recy - 100, right - 50, left - 50)
+
+
+
+    recx = recx + velx
+    recy = recy + vely
+    # ToDo draw rectangle
+    if recx < 0:
+        velx = 24
+    if recy < 0:
+        vely = 22
+    if recx > 1000:
+        velx = -24
+    if recy > 1000:
+        vely = -22
+
+
+    glutSwapBuffers()       

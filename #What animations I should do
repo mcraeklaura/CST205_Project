@@ -1,0 +1,17 @@
+#What animations I should do
+#1. One where the square changes color every time it changes direction
+		How to do this: Every time the square hits the edge of the page, it not only changes direction, but it changes to a color (you can make the different colors in an array and then loop through the array every time it changes and you can use about 8 colors)
+#2. One where the square changes from a square into a rectangle
+		How to do this: The rectangle can be doing the same animation, but it needs to visibly change into a rectangle, however, when the sound frequency changes again, then the object needs to slowly change into a square again, if this is not really possible, then throw this idea out, or just use this same object instead of the square in the next animation and then make an animation where when it hits this frequency again, it will slowly change back into its original square
+#3. One where the square changes from bouncing off the walls into it bouncing into some other direction
+		How to do this: just change the = x function into something else, like something with sin or cos or something where the square will move arround in waves or something
+#4. One where the square moves in circles (find some sort of equation or something)
+		How to do this: Find some sort of elipse formation
+#5. One where the square gets bigger and smaller while moving the same way it does in the original animation
+		How to do this: Make the size of the square bigger in relation to where it is on the map, and when it reaches a certain point on the map, make it smaller, and keep doing this umtil the sound frequency changes again
+
+
+
+#The smaller the numbers of the velocity variable, then the slower the animation goes
+
+#So maybe make the pace faster or slower for another animation, like it gets progressively slower until the velocity gets under one and then make it progressivly faster until the velocity reaches a certain point (no faster than 24 most likely)

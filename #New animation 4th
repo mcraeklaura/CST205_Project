@@ -1,0 +1,21 @@
+#New animation 4th
+
+#The fourth animation
+#makes it go slow and change into different colors
+#Makes it go in different directions
+
+recx = recx + velx
+    recy = recy + vely
+    # ToDo draw rectangle
+    if recx < 0:
+        velx = 17
+        glColor3f(1,0,0)
+    if recy < 0:
+        vely = 14
+        glColor3f(0,1,0)
+    if recx > 400:
+        velx = -17
+        glColor3f(1,0,0)
+    if recy > 400:
+        vely = -14
+        glColor3f(1,0,0)
